@@ -1,0 +1,3 @@
+<view class="search">
+  <view class="search-text" bindtap="onTap">{{search}}</view>
+</view>

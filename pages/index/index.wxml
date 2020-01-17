@@ -1,12 +1,39 @@
 <!--index.wxml-->
-<view class="list">
-  <!-- <view class="item">1</view>
-  <view class="item">2</view>
-  <view class="item">3</view>
-  <view class="item">4</view>
-  <view class="item">5</view> -->
-  <view>第一个</view>
+<searchinput bindmyevent="myevent" />
+<!-- 轮播图 开始 -->
+<view class="index_swiper">
+  <swiper indicator-dots="true" autoplay="true" circular="true">
+    <swiper-item wx:for="{{swiper_list}}" wx:key="goods_id">
+      <navigator url="{{item.navigator_url}}" open-type="{{item.open_type}}">
+        <image src="{{item.image_src}}" mode="widthFix"></image>
+      </navigator>
+    </swiper-item>
+  </swiper>
 </view>
-<view>
-    第二个
+<!-- 轮播图 结束 -->
+<!-- 分类列表 -->
+<view class="classify">
+  <navigator class="classify-item" wx:for='{{classify}}' wx:key='index' url='item.navigator_url'>
+    <image src="{{item.image_src}}"></image>
+  </navigator>
+</view>
+<!-- 分类列表 -->
+
+<!-- 盖楼 -->
+<view class="floor" wx:for='{{floor}}' wx:key='index'>
+  <image src="{{item.floor_title.image_src}}"></image>
+  <view class="floor-box">
+    <!-- <view class="floor-left">
+      <navigator><image src="{{item.product_list[0].image_src}}"></image></navigator>
+    </view>
+    <view class="floor-right">
+      <navigator><image src="{{item.product_list[1].image_src}}"></image></navigator>
+      <navigator><image src="{{item.product_list[2].image_src}}"></image></navigator>
+      <navigator><image src="{{item.product_list[3].image_src}}"></image></navigator>
+      <navigator><image src="{{item.product_list[4].image_src}}"></image></navigator>
+    </view> -->
+    <navigator wx:for="{{item.product_list}}" wx:key='v.product_list.name' wx:for-item='v' wx:for-index='i' wx:key='i'>
+      <image src="{{v.image_src}}"></image>
+    </navigator>
+  </view>
 </view>

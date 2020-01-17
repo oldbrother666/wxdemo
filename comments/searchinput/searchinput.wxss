@@ -1,0 +1,14 @@
+.search-text{
+  text-align: center;
+  background: white;
+  color: #ccc;
+  width: 355px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 15px;
+  border-radius: 5px
+}
+.search{
+  background: red;
+  padding:5px 10px
+}

@@ -1,0 +1,11 @@
+<swiper autoplay='true' interval='1000' circular='true'>
+  <swiper-item>
+    <image src="/assets/icons/cart.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/assets/icons/cart-o.png"></image>
+  </swiper-item>
+  <swiper-item>
+    <image src="/assets/icons/home-o.png"></image>
+  </swiper-item>
+</swiper>
