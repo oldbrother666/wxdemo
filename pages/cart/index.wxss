@@ -1,0 +1,88 @@
+.cartlist {
+  display: flex;
+  padding: 10rpx 5rpx;
+  border-bottom: 1rpx #ccc solid;
+}
+.cartlist .cartlist-check {
+  width: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--bgcolor);
+  transition: all 1s;
+}
+.cartlist .cartlist-content {
+  display: flex;
+  width: 100%;
+}
+.cartlist .cartlist-content image {
+  width: 191rpx;
+  height: 191rpx;
+  margin-right: 8rpx;
+}
+.cartlist .cartlist-content .cartlist-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.cartlist .cartlist-content .cartlist-right .cartlist-right-text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.cartlist .cartlist-content .cartlist-right .cartlist-right-num {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.cartlist .cartlist-content .cartlist-right .cartlist-right-num .compute {
+  height: 56rpx;
+  padding: 0 20rpx 0 0;
+}
+.cartlist .cartlist-content .cartlist-right .cartlist-right-num .compute icon {
+  height: 14rpx;
+}
+.foot {
+  position: fixed;
+  bottom: 0;
+  height: 83rpx;
+  display: flex;
+  width: 100%;
+  background: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15rpx;
+  border-top: 1rpx solid #ccc;
+}
+.foot icon {
+  color: var(--bgcolor);
+}
+.foot .text1 {
+  color: #929292;
+  font-size: 21rpx;
+  margin: 0 20rpx;
+}
+.foot .text2 {
+  font-size: 26rpx;
+  letter-spacing: 3rpx;
+}
+.foot .text3 {
+  color: #ea4754;
+  font-size: 28rpx;
+}
+.foot-right {
+  padding-right: 40rpx;
+}
+.foot-right navigator {
+  width: 150rpx;
+  background: var(--bgcolor);
+  font-size: 21rpx;
+  text-align: center;
+  line-height: 52rpx;
+  border-radius: 200rpx;
+  color: white;
+  letter-spacing: 2rpx;
+}

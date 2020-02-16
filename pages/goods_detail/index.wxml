@@ -1,0 +1,44 @@
+<!-- 轮播图 -->
+<swiper indicator-dots='true' indicator-active-color='#ea4350'>
+  <swiper-item wx:for='{{goods_data.pics}}' wx:key='index'>
+    <image src="{{item.pics_big_url}}" bindtap="bigImage" data-img="{{item.pics_big_url}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 价钱，分享，收藏 -->
+<view class="price">
+  <text class="price-money">￥{{goods_data.goods_price}}</text>
+  <view class="price-share">
+    <!-- 发送按钮隐藏 -->
+    <button open-type="share"></button>
+    <view class="iconfont icon-fasong"></view>
+    <view class="iconfont icon-shoucang"></view>
+  </view>
+</view>
+<view class="content">{{goods_data.goods_name}}</view>
+<!-- 图文详情 -->
+<view class="text">
+  图文详情
+</view>
+<rich-text nodes='{{goods_data.goods_introduce}}'></rich-text>
+<!--联系客服，购物车，购买 -->
+<view class="foot">
+  <view class="foot1" bindtap="tel">
+    <view class="iconfont icon-kefu"></view>
+    联系客服
+  </view>
+  <navigator class="foot2" url="/pages/cart/index" open-type='switchTab'>
+    <view class="iconfont icon-gouwuche"></view>
+    购物车
+  </navigator>
+  <view class="foot3">
+    <view class="shopping" bindtap="addBuy">
+      加入购物车
+    </view>
+  </view>
+  <view class="foot4">
+    <view class="buy">
+      立即购买
+    </view>
+  </view>
+
+</view>

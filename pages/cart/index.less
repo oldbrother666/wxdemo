@@ -1,0 +1,107 @@
+// 商品列表
+.cartlist {
+    display: flex;
+    padding: 10rpx 5rpx;
+    border-bottom: 1rpx #ccc solid;
+    // 选择框
+    .cartlist-check {
+        width: 70rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--bgcolor);
+        transition: all 1s;
+    }
+
+    .cartlist-content {
+        display: flex;
+        width: 100%;
+
+        image {
+            width: 191rpx;
+            height: 191rpx;
+            margin-right: 8rpx;
+        }
+
+        .cartlist-right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+
+            .cartlist-right-text {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                overflow: hidden;
+            }
+
+            .cartlist-right-num {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+
+                // 计算部分
+                .compute {
+                    height: 56rpx;
+                    padding: 0 20rpx 0 0;
+
+                    icon {
+                        height: 14rpx;
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+// 底部固定部分
+.foot {
+    position: fixed;
+    bottom: 0;
+    height: 83rpx;
+    display: flex;
+    width: 100%;
+    background: white;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15rpx;
+    border-top: 1rpx solid #ccc;
+    icon{
+        color: var(--bgcolor);
+    }
+    .text1 {
+        color: #929292;
+        font-size: 21rpx;
+        margin: 0 20rpx;
+    }
+
+    .text2 {
+        font-size: 26rpx;
+        letter-spacing:3rpx;
+
+    }
+
+    .text3 {
+        color: #ea4754;
+        font-size: 28rpx;
+    }
+
+
+}
+
+.foot-right {
+    padding-right: 40rpx;
+    navigator {
+        width: 150rpx;
+        background: var(--bgcolor);
+        font-size: 21rpx;
+        text-align: center;
+        line-height: 52rpx;
+        border-radius: 200rpx;
+        color: white;
+        letter-spacing:2rpx;
+    }
+}

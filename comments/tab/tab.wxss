@@ -1,0 +1,17 @@
+.tab-box{
+  display: flex
+}
+.tablist{
+  flex: 1;
+  text-align: center;
+  font-size: 30rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+}
+text{
+  border-bottom: 3rpx solid white;
+  padding: 8% 25%
+}
+.active{
+  border-bottom: 3rpx solid var(--bgcolor)
+}

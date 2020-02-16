@@ -1,0 +1,39 @@
+<!-- 购物车列表 -->
+<view wx:if='{{cartlist}}'>
+  <view class="cartlist" wx:for='{{cartlist}}' wx:key='index'>
+    <view class="cartlist-check">
+      <icon class="iconfont {{item.check?'icon-dui':'icon-quan'}}" bindtap="check_one" data-id="{{item.id}}"></icon>
+    </view>
+    <view class="cartlist-content">
+      <image src="{{item.image}}"></image>
+      <view class="cartlist-right">
+        <view class="cartlist-right-text">{{item.goods_name}}</view>
+        <view class="cartlist-right-num">
+          <text>￥{{item.price}}</text>
+          <view class="compute">
+            <icon class="iconfont icon-jian" data-del="{{item.id}}"  bindtap="delnum"></icon> {{item.num}}
+            <icon class="iconfont icon-jjia-" bindtap="addnum" data-add="{{item.id}}"></icon>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 如果没有数据，则渲染图片 -->
+<view wx:elif='{{!cartlist}}'>
+  <image src="http://hbimg.b0.upaiyun.com/e1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658"></image>
+</view>
+<!-- 底部 -->
+<view class="foot">
+  <view class="foot-left">
+    <icon class="iconfont {{num==cartlist.length?'icon-dui':'icon-quan'}}" bindtap="check_all"></icon>
+    <text class="text1">全选 </text>
+    <text class="text2"> 合计</text>:
+    <text class="text3"> ￥{{price}}</text>
+  </view>
+  <view class="foot-right">
+    <navigator>
+      去结算({{allnum}})
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,27 @@
+image{
+  width: 191rpx;
+  height: 191rpx
+}
+.pyg_goods_list{
+  height: 100vh;
+}
+.goods-box{
+  display: flex;
+  margin-top: 10rpx;
+}
+.goods-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: var(--bgcolor);
+  padding: 10rpx 10rpx 10rpx 20rpx;
+  font-size: 24rpx;
+  flex: 1
+}
+.goods-text-top{
+  color: black;
+  display: -webkit-box;
+-webkit-box-orient: vertical;
+-webkit-line-clamp: 2;
+overflow: hidden;
+}

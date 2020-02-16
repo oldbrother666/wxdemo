@@ -1,0 +1,86 @@
+{
+  "id": "1635204",
+  "name": "小程序",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "654162",
+      "name": "减",
+      "font_class": "jian",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "845579",
+      "name": "圈",
+      "font_class": "quan",
+      "unicode": "e741",
+      "unicode_decimal": 59201
+    },
+    {
+      "icon_id": "1400849",
+      "name": "对",
+      "font_class": "dui",
+      "unicode": "e614",
+      "unicode_decimal": 58900
+    },
+    {
+      "icon_id": "5026283",
+      "name": "加",
+      "font_class": "jjia-",
+      "unicode": "e6a9",
+      "unicode_decimal": 59049
+    },
+    {
+      "icon_id": "7817220",
+      "name": "购物车",
+      "font_class": "gouwuche",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "677596",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "887930",
+      "name": "收藏 (1)",
+      "font_class": "shoucang1",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "947143",
+      "name": "下载",
+      "font_class": "xiazai",
+      "unicode": "e6ad",
+      "unicode_decimal": 59053
+    },
+    {
+      "icon_id": "5756005",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e624",
+      "unicode_decimal": 58916
+    },
+    {
+      "icon_id": "6997493",
+      "name": "我 的",
+      "font_class": "wodedangxuan",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "9526786",
+      "name": "发送",
+      "font_class": "fasong",
+      "unicode": "e60d",
+      "unicode_decimal": 58893
+    }
+  ]
+}

@@ -18,8 +18,8 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    onTap() {
-      this.triggerEvent('myevent', '666')
+    onTap(e) {
+      this.triggerEvent('myevent', e)
     }
   }
 })

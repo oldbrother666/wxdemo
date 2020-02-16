@@ -1,0 +1,17 @@
+<view class="pyg_goods_list">
+<!-- 搜索框 -->
+<searchinput bindmyevent='searchinput' />
+<!-- tab栏 -->
+<tab data='{{tablist}}' bindhandleActive='handleActive' />
+<view wx:if='{{tablist[0].select}}'>
+  <navigator wx:for="{{goods}}" wx:key='index' class="goods-box" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+    <image src="{{item.goods_big_logo}}"></image>
+    <view class="goods-text">
+      <view class="goods-text-top">{{item.goods_name}}</view>
+      ￥{{item.goods_price}}
+    </view>
+  </navigator>
+</view>
+<view wx:if='{{tablist[1].select}}'>2</view>
+<view wx:if='{{tablist[2].select}}'>3</view>
+</view>

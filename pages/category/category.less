@@ -1,0 +1,53 @@
+.box {
+    display: flex;
+    height: calc(100vh - 70rpx);
+    overflow: hidden;
+
+    .box-left {
+        width: 181rpx;
+        background: #f3f3f3;
+
+        .left-item {
+            font-size: 26rpx;
+            line-height: 40rpx;
+            height: 40rpx;
+            text-align: center;
+            padding: 15rpx 0;
+            view{
+                border-left: 4rpx solid white;
+            }
+        }
+    }
+    .box-right{
+        flex: 1;
+        .right-item-info{
+            padding: 0rpx 26rpx;
+            .text{
+                text-align: center;
+                clear: both;
+                font-size: 26rpx;
+                color: #575757;
+                padding-top: 20rpx;
+            }
+            
+            .img{
+                font-size: 21rpx;
+                height: 160rpx;
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                float: left;
+                padding: 15rpx 26rpx;
+                image{
+                    width: 120rpx;
+                    height: 120rpx;
+                }
+                
+            }
+        }
+    }
+}
+.active{
+    border-left: 4rpx solid var(--bgcolor)!important;
+    color: var(--bgcolor);
+}

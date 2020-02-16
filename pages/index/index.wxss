@@ -10,8 +10,8 @@ image{
   display: flex;
   flex-direction:column;
   align-items: center;
-  font-size: 13px;
-  margin-top: 8px;
+  font-size: 13rpx;
+  margin-top: 8rpx;
 }
 .classify-item image{
   width: 140rpx;

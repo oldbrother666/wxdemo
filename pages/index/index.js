@@ -4,20 +4,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    swiper_list: '',
-    classify:[],
-    floor:[]
+    swiper_list: '',  //轮播图
+    classify:[], 
+    floor:[]  //楼层总数据
   },
   dian: (e) => {
     console.log(e)
   },
-  myevent(e) {
-    console.log(e)
+  searchinput(e) {
+    wx.navigateTo({
+      url: '../search/index',
+    })
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    //轮播图
     wx.request({
         url: 'https://api.zbztb.cn/api/public/v1/home/swiperdata',
         success: (res) => {
@@ -26,19 +29,21 @@ Page({
           })
         }
       }),
+      //分类
       wx.request({
         url: 'https://api.zbztb.cn/api/public/v1/home/catitems',
         success: (res) => {
-          // console.log(res)
+          console.log(res)
           this.setData({
             classify: res.data.message
           })
         }
       }),
+      // 盖楼
       wx.request({
         url: 'https://api.zbztb.cn/api/public/v1/home/floordata',
         success: (res) => {
-          // console.log(res)
+          console.log(res)
           this.setData({
             floor: res.data.message
           })

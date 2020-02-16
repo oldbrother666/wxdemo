@@ -1,6 +1,8 @@
 {
-  "usingComponents": {},
-   "backgroundTextStyle": "light",
+  "usingComponents": {
+    "searchinput":"../../comments/searchinput/searchinput"
+  },
+  "backgroundTextStyle": "light",
   "navigationBarBackgroundColor": "#eb4450",
   "navigationBarTitleText": "分类",
   "navigationBarTextStyle": "white"

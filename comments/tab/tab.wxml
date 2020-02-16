@@ -1,0 +1,5 @@
+<view class="tab-box">
+    <view wx:for='{{data}}' wx:key='index' class="tablist" bindtap="handleActive" data-id="{{index}}">
+      <text class="{{item.select==true?'active':''}}">{{item.value}}</text>
+    </view>
+</view>

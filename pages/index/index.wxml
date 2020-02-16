@@ -1,5 +1,5 @@
 <!--index.wxml-->
-<searchinput bindmyevent="myevent" />
+<searchinput bind:myevent='searchinput'/>
 <!-- 轮播图 开始 -->
 <view class="index_swiper">
   <swiper indicator-dots="true" autoplay="true" circular="true">
@@ -32,7 +32,7 @@
       <navigator><image src="{{item.product_list[3].image_src}}"></image></navigator>
       <navigator><image src="{{item.product_list[4].image_src}}"></image></navigator>
     </view> -->
-    <navigator wx:for="{{item.product_list}}" wx:key='v.product_list.name' wx:for-item='v' wx:for-index='i' wx:key='i'>
+    <navigator wx:for="{{item.product_list}}" wx:key='v.product_list.name' wx:for-item='v' wx:for-index='i' wx:key='i' open-type="{{v.open_type}}" url="{{v.navigator_url}}">
       <image src="{{v.image_src}}"></image>
     </navigator>
   </view>

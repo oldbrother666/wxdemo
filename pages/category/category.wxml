@@ -1,0 +1,26 @@
+<!-- 搜索框 -->
+<searchinput bindmyevent='searchinput' />
+<!-- 左右列表盒子 -->
+<view class="box">
+  <!-- 左边列表 -->
+  <scroll-view class="box-left" scroll-y='true'>
+    <view class="left-item" wx:for='{{listItem}}' wx:key='index' bindtap="handleActive" data-id="{{index}}">
+      <view class="{{index == active?'active':''}}">{{item.cat_name}}</view>
+    </view>
+  </scroll-view>
+
+  <!-- 右边列表 -->
+  <scroll-view scroll-y='true'>
+    <view class="box-right">
+      <view class="right-item" wx:for='{{listItem}}' wx:key='index' wx:if='{{active == index}}'>
+        <view class="right-item-info" wx:for='{{item.children}}' wx:for-item="v" wx:for-index="i" wx:key='i'>
+          <view class="text">/ {{v.cat_name}} /</view>
+          <navigator url="/pages/goods_list/index?cid={{value.cat_id}}" wx:for='{{v.children}}' wx:for-item="value" wx:for-index="in" wx:key='in' class="img">
+            <image src="{{value.cat_icon}}"></image>
+            <text>{{value.cat_name}}</text>
+          </navigator>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
