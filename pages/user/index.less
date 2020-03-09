@@ -1,0 +1,93 @@
+// 头像
+.login {
+  height: 329rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myPhoto {
+  height: 329rpx;
+  position: relative;
+  width: 100%;
+  // border-bottom: 1px black solid;
+
+  > image {
+    filter: blur(40rpx);
+    height: 329rpx;
+    width: 100%;
+  }
+
+  .myPhoto-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 220rpx;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+
+    image {
+      width: 172rpx;
+      height: 172rpx;
+      border-radius: 100%;
+      // background: #000;
+      margin-bottom: 10rpx;
+    }
+
+    text {
+      color: white;
+      font-size: 32rpx;
+    }
+  }
+}
+
+// 代付款
+.info {
+  display: flex;
+  height: 144rpx;
+  align-items: center;
+  // border: solid 1rpx black;
+  margin-bottom: 15rpx;
+
+  view {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    icon {
+      margin-bottom: 15rpx;
+    }
+  }
+}
+
+//客服列表
+.service {
+  // border: 1px solid black;
+  padding: 0 32rpx;
+  > view {
+    height: 101rpx;
+    line-height: 101rpx;
+    border-bottom: 1px solid #e3e3e3;
+    icon {
+      height: 11rpx;
+      margin-right: 17rpx;
+    }
+    text {
+      float: right;
+    }
+  }
+}
+// 意见反馈
+navigator {
+  height: 101rpx;
+  line-height: 101rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  icon{
+    margin-right: 17rpx;
+  }
+}

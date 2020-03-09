@@ -1,0 +1,18 @@
+.all{
+  padding: 15rpx 30rpx;
+  font-size: 30rpx;
+  color: #696969;
+  margin-bottom: 20rpx
+}
+.all-list{
+  line-height: 70rpx;
+}
+.all-right{
+  border: none!important;
+  padding: 0!important;
+  float: right;
+  color: #434343
+}
+.red{
+  color: var(--bgcolor)
+}

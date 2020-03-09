@@ -1,6 +1,8 @@
 {
   "usingComponents": {},
+  "backgroundTextStyle": "dark",
   "navigationBarBackgroundColor": "#eb4450",
+  "navigationBarTitleText": "支付授权",
   "navigationBarTextStyle": "white",
-  "navigationBarTitleText": "个人中心"
+  "enablePullDownRefresh": true
 }

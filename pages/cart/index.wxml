@@ -32,7 +32,7 @@
     <text class="text3"> ￥{{price}}</text>
   </view>
   <view class="foot-right">
-    <navigator>
+    <navigator url='/pages/pay/index'>
       去结算({{allnum}})
     </navigator>
   </view>

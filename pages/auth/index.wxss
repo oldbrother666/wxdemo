@@ -1,0 +1,4 @@
+button{
+  margin: 20rpx auto!important;
+  line-height: 100rpx
+}

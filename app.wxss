@@ -10,11 +10,11 @@ imp
   padding: 200rpx 0;
   box-sizing: border-box;
 }
-page,button {
+/* page,button {
   padding: 0!important;
   margin: 0!important;
 
-}
+} */
 page{
   --bgcolor:#eb4450
 }

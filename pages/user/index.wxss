@@ -1,1 +1,77 @@
-/* pages/user/index.wxss */
+.login {
+  height: 329rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.myPhoto {
+  height: 329rpx;
+  position: relative;
+  width: 100%;
+}
+.myPhoto > image {
+  filter: blur(40rpx);
+  height: 329rpx;
+  width: 100%;
+}
+.myPhoto .myPhoto-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  height: 220rpx;
+  align-items: center;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+.myPhoto .myPhoto-box image {
+  width: 172rpx;
+  height: 172rpx;
+  border-radius: 100%;
+  margin-bottom: 10rpx;
+}
+.myPhoto .myPhoto-box text {
+  color: white;
+  font-size: 32rpx;
+}
+.info {
+  display: flex;
+  height: 144rpx;
+  align-items: center;
+  margin-bottom: 15rpx;
+}
+.info view {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.info view icon {
+  margin-bottom: 15rpx;
+}
+.service {
+  padding: 0 32rpx;
+}
+.service > view {
+  height: 101rpx;
+  line-height: 101rpx;
+  border-bottom: 1px solid #e3e3e3;
+}
+.service > view icon {
+  height: 11rpx;
+  margin-right: 17rpx;
+}
+.service > view text {
+  float: right;
+}
+navigator {
+  height: 101rpx;
+  line-height: 101rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+navigator icon {
+  margin-right: 17rpx;
+}

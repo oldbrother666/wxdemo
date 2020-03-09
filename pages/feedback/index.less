@@ -1,0 +1,83 @@
+// 类型
+.type {
+  width: 100%;
+  width: 700rpx;
+  margin: 20rpx 50rpx;
+  text {
+    font-size: 26rpx;
+    padding: 0 10rpx;
+  }
+  .type-box {
+    display: flex;
+    font-size: 20rpx;
+    flex-wrap: wrap;
+    margin-top: 20rpx;
+    .type-list {
+      width: 181rpx;
+      height: 46rpx;
+      border-radius: 200rpx;
+      background: #ededed;
+      border: 1rpx solid white;
+      text-align: center;
+      line-height: 46rpx;
+      margin: 0 50rpx 18rpx 0;
+    }
+  }
+}
+// 文本域
+textarea{
+  padding:0 50rpx;
+  height: 391rpx!important;
+  margin-top: 25rpx;
+}
+// 上传图片
+.picture-text{
+  padding: 0 55rpx;
+}
+.picture-box{
+  padding: 20rpx 40rpx 0 50rpx;
+  display: flex;
+  .picture-add{
+    height: 128rpx;
+    width: 128rpx;
+    background: #ccc;
+    font-size: 150rpx;
+    text-align: center;
+    line-height: 110rpx;
+    color: #a6a6a6;
+    margin-right: 10rpx;
+  }
+  .picture-item{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    >view{
+      position: relative;
+      icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+      image{
+        width: 128rpx;
+        height: 128rpx;
+        margin-right: 2rpx;
+      }
+    }
+  }
+}
+// 提交
+.submit{
+  padding: 0 15rpx;
+  width: 750rpx;
+  margin-top: 25rpx;
+  view{
+    width: 720rpx;
+    height: 70rpx;
+    background: var(--bgcolor);
+    text-align: center;
+    line-height: 70rpx;
+    border-radius: 200rpx;
+    color: white;
+  }
+}

@@ -1,0 +1,1 @@
+<button type='primary' plain open-type="getUserInfo" bindgetuserinfo='getuser'>用户授权</button>

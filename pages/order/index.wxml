@@ -1,0 +1,38 @@
+<!-- tab栏 -->
+<tab data='{{tab}}' bind:handleActive="tabActive"/>
+<!-- 点击全部的内容 -->
+<view class="all"  wx:for="{{allList}}" wx:key='index' wx:if="{{tab[0].select}}">
+    <view class="all-list">
+       订单编号 <text class="all-right">{{item.order_number}}</text> 
+    </view>
+    <view class="all-list">
+      订单金额 <text class="all-right red">￥{{item.order_price}}</text> 
+    </view>
+    <view class="all-list">
+      订单日期 <text class="all-right">{{item.newtime}}</text> 
+    </view>
+</view>
+<!-- 点击待付款内容 -->
+<view class="all"  wx:for="{{allList2}}" wx:key='index' wx:if="{{tab[1].select}}">
+    <view class="all-list">
+       订单编号 <text class="all-right">{{item.order_number}}</text> 
+    </view>
+    <view class="all-list">
+      订单金额 <text class="all-right red">￥{{item.order_price}}</text> 
+    </view>
+    <view class="all-list">
+      订单日期 <text class="all-right">{{item.newtime}}</text> 
+    </view>
+</view>
+<!-- 点击待发货内容 -->
+<view class="all"  wx:for="{{allList3}}" wx:key='index' wx:if="{{tab[2].select}}">
+    <view class="all-list">
+       订单编号 <text class="all-right">{{item.order_number}}</text> 
+    </view>
+    <view class="all-list">
+      订单金额 <text class="all-right red">￥{{item.order_price}}</text> 
+    </view>
+    <view class="all-list">
+      订单日期 <text class="all-right">{{item.newtime}}</text> 
+    </view>
+</view>

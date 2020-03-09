@@ -4,8 +4,22 @@ Page({
   /**
    * 页面的初始数据
    */
+  // 打电话——————————————————————————————————————————————————————————————————————————
+  getUser(e){
+    // console.log(e.detail.userInfo)
+    this.setData({
+      userInfo: e.detail.userInfo
+    })
+    wx.setStorageSync('userInfo',e.detail.userInfo)
+  },
+  tel(){
+    wx.makePhoneCall({
+      phoneNumber: '00-00-00-00' //仅为示例，并非真实的电话号码
+    })
+  },
+  // ___________________________________________________________________________________
   data: {
-
+    userInfo:''
   },
 
   /**
@@ -26,7 +40,10 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    const userInfo = wx.getStorageSync('userInfo')
+    this.setData({
+      userInfo
+    })
   },
 
   /**

@@ -9,6 +9,10 @@ export const request = (params) => {
     title: '正在加载中',
     mask: true
   })
+  console.log(params)
+  if (params.url.indexOf("/my/orders") == 0){
+    // params.Authorization = 
+  }
   return new Promise(function (resolve, reject) {
     wx.request({
       ...params,

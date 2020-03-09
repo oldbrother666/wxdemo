@@ -1,0 +1,35 @@
+<!-- 收货地址 -->
+<view class="location" wx:if="{{!address}}">
+  <view class="location-text" bindtap="address">选择地址</view>
+</view>
+<view wx:if="{{address}}" class="address" bindtap="changeAddress">
+  <view>{{address.all}}</view>
+  {{address.userName}}<text>{{address.telNumber}}</text>
+</view>
+<!-- 已选商品 -->
+<view class="xuan">
+  已选商品
+</view>
+<view class="goods" wx:for='{{goods_list}}' wx:key='index'>
+  <view class="goods-list">
+    <view class="goods-left">
+      <image src='{{item.image}}'></image>
+    </view>
+    <view class="goods-right">
+      <view class="goods-text">{{item.goods_name}}</view>
+      <view class="goods-num">
+        ￥{{item.price}}
+        <text>×{{item.num}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 底部结算 -->
+<view class="footer">
+  <view class="footer-left">
+    合计：<text>￥{{price}}</text>
+  </view>
+  <view class="footer-right"bindtap="pay">
+    去支付 ( {{num}} )
+  </view>
+</view>

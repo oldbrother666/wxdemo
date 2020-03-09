@@ -1,2 +1,44 @@
-<!--pages/user/index.wxml-->
-<text>pages/user/index.wxml</text>
+<!-- 背景和头像名字部分 -->
+<view class="login" wx:if='{{!userInfo}}'>
+  <button open-type="getUserInfo" bindgetuserinfo='getUser' type='warn' plain>登录</button>
+</view>
+<view class="myPhoto" wx:if='{{userInfo}}'>
+  <image src="{{userInfo.avatarUrl}}"></image>
+  <view class="myPhoto-box">
+    <image src="{{userInfo.avatarUrl}}"></image>
+    <text>{{userInfo.nickName}}</text>
+  </view>
+</view>
+<!-- 代付款列表 -->
+<view class="info">
+  <view>
+    <icon type="success"></icon>
+    <text>待支付</text>
+  </view>
+  <view>
+    <icon type="success"></icon>
+    <text>待收货</text>
+  </view>
+  <view>
+    <icon type="success"></icon>
+    <text>退货/退款</text>
+  </view>
+  <view>
+    <icon type="success"></icon>
+    <text>全部订单</text>
+  </view>
+</view>
+
+<!-- 客服列表 -->
+<view class="service">
+  <view bindtap="tel">
+    <icon class="iconfont icon-kefu"></icon>联系客服
+    <text>00-00-00-00</text>
+  </view>
+  <navigator url='/pages/feedback/index'>
+    <icon class="iconfont icon-kefu"></icon>意见反馈</navigator>
+  <view>
+    <icon class="iconfont icon-kefu"></icon>当前版本
+    <text>v4.1.1</text>
+  </view>
+</view>

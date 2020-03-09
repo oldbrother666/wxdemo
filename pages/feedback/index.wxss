@@ -1,0 +1,79 @@
+.type {
+  width: 100%;
+  width: 700rpx;
+  margin: 20rpx 50rpx;
+}
+.type text {
+  font-size: 26rpx;
+  padding: 0 10rpx;
+}
+.type .type-box {
+  display: flex;
+  font-size: 20rpx;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.type .type-box .type-list {
+  width: 181rpx;
+  height: 46rpx;
+  border-radius: 200rpx;
+  background: #ededed;
+  border: 1rpx solid white;
+  text-align: center;
+  line-height: 46rpx;
+  margin: 0 50rpx 18rpx 0;
+}
+textarea {
+  padding: 0 50rpx;
+  height: 391rpx!important;
+  margin-top: 25rpx;
+}
+.picture-text {
+  padding: 0 55rpx;
+}
+.picture-box {
+  padding: 20rpx 40rpx 0 50rpx;
+  display: flex;
+}
+.picture-box .picture-add {
+  height: 128rpx;
+  width: 128rpx;
+  background: #ccc;
+  font-size: 150rpx;
+  text-align: center;
+  line-height: 110rpx;
+  color: #a6a6a6;
+  margin-right: 10rpx;
+}
+.picture-box .picture-item {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+}
+.picture-box .picture-item > view {
+  position: relative;
+}
+.picture-box .picture-item > view icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.picture-box .picture-item > view image {
+  width: 128rpx;
+  height: 128rpx;
+  margin-right: 2rpx;
+}
+.submit {
+  padding: 0 15rpx;
+  width: 750rpx;
+  margin-top: 25rpx;
+}
+.submit view {
+  width: 720rpx;
+  height: 70rpx;
+  background: var(--bgcolor);
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 200rpx;
+  color: white;
+}

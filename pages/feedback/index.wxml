@@ -1,0 +1,28 @@
+<!-- 选择类型 -->
+<view class="type">
+  <text>选择问题类型</text>
+  <view class="type-box">
+    <view class="type-list">功能问题</view>
+    <view class="type-list">性能问题</view>
+    <view class="type-list">体验问题</view>
+    <view class="type-list">其他</view>
+  </view>
+</view>
+<!-- 文本域 -->
+<textarea placeholder='请描述一下你的问题'></textarea>
+<!-- 上传图片 -->
+<view class="picture-text">上传图片({{num}}/8)</view>
+<view class="picture-box">
+  <view class="picture-add" bindtap="handleUpload">+</view>
+  <view class="picture-item">
+    <view wx:for='{{imgList}}' wx:key='index'>
+      <icon type='clear' color="red" bindtap="clearImg" data-index="{{index}}"></icon>
+      <image src="{{item}}"></image>
+    </view>
+  </view>
+</view>
+
+<!-- 提交 -->
+<view class="submit">
+  <view bindtap="submit">提交</view>
+</view> 

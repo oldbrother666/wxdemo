@@ -22,8 +22,9 @@ Page({
   onLoad: function(options) {
     //轮播图
     wx.request({
-        url: 'https://api.zbztb.cn/api/public/v1/home/swiperdata',
+      url: 'https://api.zbztb.cn/api/public/v1',
         success: (res) => {
+          console.log(res)
           this.setData({
             swiper_list: res.data.message
           })
@@ -31,7 +32,7 @@ Page({
       }),
       //分类
       wx.request({
-        url: 'https://api.zbztb.cn/api/public/v1/home/catitems',
+      url: 'https://api.zbztb.cn/api/public/v1',
         success: (res) => {
           console.log(res)
           this.setData({
@@ -41,7 +42,7 @@ Page({
       }),
       // 盖楼
       wx.request({
-        url: 'https://api.zbztb.cn/api/public/v1/home/floordata',
+      url: 'https://api.zbztb.cn/api/public/v1',
         success: (res) => {
           console.log(res)
           this.setData({
